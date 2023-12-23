@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <script src="https://kit.fontawesome.com/477ab4a732.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Bookmarker</title>
+</head>
+<body>
+    <div class="container py-5 ">
+        <header class=" d-flex flex-column align-items-center justify-content-center mb-5">
+            <h1 class=" text-center d-block display-4 mb-2">Bookmarker</h1>
+        <h2 class="d-flex justify-content-center align-items-center h4">
+            <div class="icons position-relative">
+                <i class="fa-regular fa-bookmark colored-befor position-absolute 
+                icon "></i>
+            </div>
+
+            Bookmark your favorite sites
+            <div class="icons position-relative">
+                <i class="fa-regular fa-bookmark colored-after position-absolute 
+                icon "></i>
+            </div>
+            
+        </h2>
+        </header>
+        <section class="input-data">
+
+            <div class="form-input mb-5">
+            <input type="text" id="name" class="form-control">
+            <label for="name" class="nameLabel">Site Name</label>
+        </div>
+        <div class="form-input">
+            <input type="url" id="url" class="form-control">
+            <label for="url" class="url">Site URL</label>
+        </div>
+        <button class="btn submit-btn rounded-pill d-block m-auto">Submit 
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="transparent" class="btn-icon" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" id="mainIconPathAttribute" stroke-width="1" ></path> </svg></button>
+    </section>
+
+    <section class="input-info d-flex justify-content-center align-items-center">
+        <div class="toggle d-flex justify-content-center align-items-center">
+            <i class="fa-sharp fa-solid fa-book-bookmark  book-close"></i>
+            <i class="fa-solid fa-book-open d-none book-open"></i>
+        </div>
+        <div class="table-content ">
+            <table class='table text-center'>
+                <thead>
+                    <th>Index</th>
+                    <th>Website name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="sec-modale">
+                <div class="modale-content">
+                  <div class="gradient-bar"></div>
+
+                 <div class="modale-head d-flex align-items-center justify-content-center">
+                    <div class="close-div">
+                        <i class="fa-solid fa-xmark close-btn"></i>
+                    </div>
+
+                    <div class="no-img">
+                        
+                        <img  src="Hands - Sign No.png" alt="">
+                    </div>
+                   
+                </div>
+                <div class="modale-body">
+                  <h5 class="fw-bold mb-5 h6">Site Name or Url is not Valid,Please follow the rules below</h5>
+                  <div class="validation-cond d-flex align-items-center ">
+                    <i class="fa-solid fa-arrow-right translate-middle"></i>
+                      <p>Site name must contain at least 3 character.</p>
+                  </div>
+                  <div class="validation-cond d-flex align-items-center ">
+                    <i class="fa-solid fa-arrow-right translate-middle"></i>
+                  <p>Site URL must be a valid one.</p>
+                </div>
+                </div>
+                
+              </div>
+          
+    </section>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
